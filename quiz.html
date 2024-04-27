@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Music Quiz </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Music Quiz</h1>
+    <div id="quiz-container">
+      <h3>album cover Quiz</h3>
+         <div id="question-container">
+        </div>
+        <img id="photo" src="https://i.redd.it/kuid97gvaod31.jpg"  width="400"
+        height="341" alt="photo" >
+        <div id="quiz"></div>
+        <div id="result" class="result"></div>
+    <button  id="submit" onclick="changePhoto()"  class="button">Next</button>
+    <button id="retry" class="button hide">Retry</button>
+    <button id="showAnswer" class="button hide">Show Answer</button>
+    </div>
+    <body>
+      <script>
+
+var photoIndex = 1;
+function changePhoto() {
+  var photo = document.getElementById("photo");
+  photoIndex++;
+
+  if (photoIndex > 10) {
+    photoIndex = 1;
+  }
+
+  if (photoIndex === 1) {
+    photo.src = "https://i.redd.it/kuid97gvaod31.jpg";
+  } else if (photoIndex === 2) {
+    photo.src = "https://www.rap-up.com/wp-content/uploads/2022/04/the-weeknd-after-hours.jpg";
+  } else if (photoIndex === 3) {
+    photo.src = "https://townsquare.media/site/812/files/2018/07/travis-scott-astroworld-cover-art-full.jpg?w=1080&q=75";
+  } else if (photoIndex === 4) {
+    photo.src = "https://media.pitchfork.com/photos/636509072145df8a03cc87b0/master/w_1600%2Cc_limit/Drake.jpg";
+  }else if (photoIndex === 5) {
+    photo.src = "https://archive.org/download/the-weeknd-starboy-deluxe/Starboy/cover.jpg";
+  }else if (photoIndex === 6) {
+    photo.src = "https://cdns-images.dzcdn.net/images/cover/3f3c09dfa2c747bd597f41681b29019b/500x500.jpg";
+  }else if (photoIndex === 7) {
+    photo.src = "https://cdns-images.dzcdn.net/images/cover/53039c766d84ba77ca7bb35bee1ad5c3/500x500.jpg";
+  }else if (photoIndex === 8) {
+    photo.src = "https://i.redd.it/expanding-kanye-wests-graduation-album-cover-art-v0-gwrkilkqxd991.png?width=1024&format=png&auto=webp&s=e456ef2119ef0692f95a5fcbebc1eff0669dd194";
+  }else if (photoIndex === 9) {
+    photo.src = "https://upload.wikimedia.org/wikipedia/en/7/7a/Sweetener_album_cover.png";
+  }else if (photoIndex === 10) {
+    photo.src = "https://p-news-upload.storage.googleapis.com/2024/03/beyonce-cowboy-carter-cover.png";
+  }
+
+ }
+
+    </script>
+     </body>
+    </html>
+  <script src="script.js"></script>
+</body>
+</html>

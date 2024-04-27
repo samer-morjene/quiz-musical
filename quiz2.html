@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Music Quiz </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="question-container">
+    <p id="question">Guess the image:</p>
+  <div class="container">
+    <h1>Music Quiz</h1>
+    <div id="quiz-container">
+        <div id="question-container">
+            <audio id="audio" controls>
+                <source src="C:\Users\Lenovo\Downloads\the weeknd.mp3" type="audio/mpeg"></audio>
+        </div>
+
+        <div id="quiz"></div>
+        <div id="result" class="result"></div>
+    <button  id="submit" onclick="changeAudio()"  class="button">Next</button>
+    <button id="retry" class="button hide">Retry</button>
+    <button id="showAnswer" class="button hide">Show Answer</button>
+  
+    <script>
+        var audioPlayer = document.getElementById("audio");
+        var audioPlayerIndex = 0;
+    
+        function changeAudio() {
+            audioPlayerIndex++;
+    
+            if (audioPlayerIndex > 10) {
+                audioPlayerIndex = 1;
+            }
+            
+            if (audioPlayerIndex === 1) {
+                audioPlayer.src = "C:\\Users\\Lenovo\\Downloads\\drake.mp3";
+            } else if (audioPlayerIndex === 2) {
+                audioPlayer.src = "C:\\Users\\Lenovo\\Desktop\\projethtml\\audio\\travis.mp3";
+            } else if (audioPlayerIndex === 3) {
+                audioPlayer.src = "C:\\Users\\Lenovo\\Desktop\\projethtml\\audio\\lana.mp3";
+            } else if (audioPlayerIndex === 4) {
+                audioPlayer.src = "C:\\Users\\Lenovo\\Desktop\\projethtml\\audio\\lil uzi.mp3";
+            } else if (audioPlayerIndex === 5) {
+                audioPlayer.src = "C:\\Users\\Lenovo\\desktop\\projethtml\\audio\\kanye.mp3"
+            } else if (audioPlayerIndex === 6) {
+                audioPlayer.src = "C:\\Users\\Lenovo\\Desktop\\projethtml\\audio\\ariana.mp3";
+            } else if (audioPlayerIndex === 7) {
+                audioPlayer.src = "C:\\Users\\Lenovo\\Desktop\\projethtml\\audio\\creepin.mp3";
+            } else if (audioPlayerIndex === 8) {
+                audioPlayer.src = "C:\\Users\\Lenovo\\Desktop\\projethtml\\audio\\metro.mp3";
+            } else if (audioPlayerIndex === 9) {
+                audioPlayer.src = "C:\\Users\\Lenovo\\Desktop\\projethtml\\audio\\beyone.mp3";
+        }
+        }
+            
+                
+    </script>
+ </body>
+</html>
+<script src="js2.js"></script>
+</body>
+</html>
